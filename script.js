@@ -17,7 +17,7 @@ window.onscroll = () => {
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
 
-        if(top >= offset && top < offset + height) {
+        if (top >= offset && top < offset + height) {
             navLinks.forEach(links => {
                 links.classList.remove('active');
                 let target = document.querySelector('header nav a[href*=' + id + ']');
@@ -46,7 +46,7 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 /* ================= Typed Text ================= */
 const typed = new Typed('.multiple-text', {
-    strings: ['Full-Stack Developer', 'CS Student', 'Problem Solver', 'Python Developer', 'React Developer', 'Cloud Engineer'],
+    strings: ['Full-Stack Developer', 'CS Student', 'Problem Solver', 'Python Developer', 'Web Developer', 'Cloud Engineer'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
@@ -55,7 +55,7 @@ const typed = new Typed('.multiple-text', {
 
 /* ================= Contact Form (Formsubmit.co) ================= */
 const contactForm = document.getElementById('contact-form');
-const submitBtn  = document.getElementById('contact-submit');
+const submitBtn = document.getElementById('contact-submit');
 const notification = document.getElementById('form-notification');
 
 function showNotification(message, type) {
@@ -67,18 +67,18 @@ function showNotification(message, type) {
 
 contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const name    = document.getElementById('contact-name').value.trim();
-    const email   = document.getElementById('contact-email').value.trim();
+    const name = document.getElementById('contact-name').value.trim();
+    const email = document.getElementById('contact-email').value.trim();
     const message = document.getElementById('contact-message').value.trim();
 
-    submitBtn.value    = 'Sending...';
+    submitBtn.value = 'Sending...';
     submitBtn.disabled = true;
 
     try {
         const res = await fetch('https://formsubmit.co/ajax/sudarshanpatil9594@gmail.com', {
-            method : 'POST',
+            method: 'POST',
             headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-            body   : JSON.stringify({ name, email, message })
+            body: JSON.stringify({ name, email, message })
         });
         const data = await res.json();
         if (data.success === 'true' || data.success === true) {
@@ -91,6 +91,6 @@ contactForm.addEventListener('submit', async (e) => {
         showNotification('❌ Network error. Please try again later.', 'error');
     }
 
-    submitBtn.value    = 'Send Message';
+    submitBtn.value = 'Send Message';
     submitBtn.disabled = false;
 });

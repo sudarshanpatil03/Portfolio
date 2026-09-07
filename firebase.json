@@ -1,0 +1,20 @@
+{
+  "hosting": {
+    "site": "sudarshanpatilportfolio",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      ".firebaserc",
+      ".git",
+      ".gitignore",
+      "README.md",
+      "*.docx"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
