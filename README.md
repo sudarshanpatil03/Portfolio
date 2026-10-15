@@ -53,6 +53,8 @@ Portfolio-main/
 
 | Project | Tech Stack | Live Link |
 |---|---|---|
+| **GeneWeaver** | Python, CUDA, BioPython, Dask | [🔗 Source](https://github.com/sudarshanpatil03/GeneWeaver) |
+| **Gaurav Collection** | React, Node.js, Razorpay, E-Commerce | [🔗 Live](https://www.gauravcollection.com) |
 | **The Roy Barber** | React, Vite, Node.js, Express, Firebase | [🔗 Live](https://roy-barber.web.app) |
 | **Personal Finance Dashboard** | React.js, Flask, MySQL, C | [🔗 Live](https://finance-dash-sudarshan.web.app/login) |
 | **Isha Hardware** | HTML, CSS, JS, Bootstrap | [🔗 Live](https://sudarshanpatil03.github.io/IshaHardware/) |
@@ -61,17 +63,18 @@ Portfolio-main/
 
 ## 🏅 Certifications
 
-- **AWS AI-Powered Cloud Engineer** — Eduaskills · [Verify](https://certificate.eduskillsfoundation.org/verify/42b0ba464b03d61ab5db/42b0ba464b03d61ab5db)
+- **Python Full Stack Developer** — EduSkills · [Verify](https://certificate.eduskillsfoundation.org/verify/41589605344ac56186de/41589605344ac56186de)
+- **AWS AI-Powered Cloud Engineer** — EduSkills · [Verify](https://certificate.eduskillsfoundation.org/verify/42b0ba464b03d61ab5db/42b0ba464b03d61ab5db)
+- **Java Full Stack Developer Virtual Internship** — EduSkills · [Verify](https://certificate.eduskillsfoundation.org/verify/410fb9a6736a79febfd7/410fb9a6736a79febfd7)
 - **Get Started with Databricks for Data Engineers** — The Forage · [Certificate](https://www.theforage.com/completion-certificates/2sNmYuurxgpFYawco/wJMjCSKFhuj97x6F3_2sNmYuurxgpFYawco_6a37cf6ba39fa8baf10a3d93_1782047459159_completion_certificate.pdf)
-- **Web Developer Certification** — InAmigos
+- **Web Developer Certification** — InAmigos · May 2026
 
 ---
 
 ## 💼 Work Experience
 
-- **Python Full-Stack Developer Intern** @ Eduaskills *(Jun 2026 – Ongoing)*
-- **AWS AI-Powered Cloud Engineer Intern** @ Eduaskills *(Apr 2026 – Jun 2026)*
-- **Web Developer Intern** @ InAmigos *(2025)*
+- **Python Development (Data Associate L1)** @ Infotact Solutions *(Jul 2026 – Ongoing)*
+- **Web Developer Intern** @ InAmigos *(May 2026)*
 
 ---
 
