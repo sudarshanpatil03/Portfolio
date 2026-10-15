@@ -94,3 +94,63 @@ contactForm.addEventListener('submit', async (e) => {
     submitBtn.value = 'Send Message';
     submitBtn.disabled = false;
 });
+
+/* ================= Code & Inspect Protection ================= */
+// 1. Disable Right-Click Context Menu
+document.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+    return false;
+});
+
+// 2. Disable DevTools & View-Source Keyboard Shortcuts
+document.addEventListener('keydown', (e) => {
+    // F12 key
+    if (e.key === 'F12' || e.keyCode === 123) {
+        e.preventDefault();
+        return false;
+    }
+    // Ctrl+Shift+I (Inspect), Ctrl+Shift+J (Console), Ctrl+Shift+C (Element Picker)
+    if (e.ctrlKey && e.shiftKey && (['I', 'i', 'J', 'j', 'C', 'c'].includes(e.key) || [73, 74, 67].includes(e.keyCode))) {
+        e.preventDefault();
+        return false;
+    }
+    // Ctrl+U (View Source), Ctrl+S (Save Page)
+    if (e.ctrlKey && (['u', 'U', 's', 'S'].includes(e.key) || [85, 83].includes(e.keyCode))) {
+        e.preventDefault();
+        return false;
+    }
+    // macOS: Cmd+Option+I, Cmd+Option+J, Cmd+Option+C, Cmd+Option+U
+    if (e.metaKey && e.altKey && (['I', 'i', 'J', 'j', 'C', 'c', 'U', 'u'].includes(e.key))) {
+        e.preventDefault();
+        return false;
+    }
+});
+
+// 3. Prevent dragging elements & images
+document.addEventListener('dragstart', (e) => {
+    e.preventDefault();
+    return false;
+});
+
+// 4. Suppress console output
+try {
+    console.log = () => {};
+    console.debug = () => {};
+    console.info = () => {};
+    console.warn = () => {};
+    console.error = () => {};
+} catch (err) {}
+
+// 5. Anti-Debugging / DevTools Deterrent Loop
+(() => {
+    function protect() {
+        setInterval(() => {
+            (function() {
+                return false;
+            }['constructor']('debugger')());
+        }, 100);
+    }
+    try {
+        protect();
+    } catch (e) {}
+})();
